@@ -20,7 +20,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "prepublish": "babel src --out-dir .",
+    "prepare": "babel src --out-dir .",
     "build": "babel src --out-dir .",
     "watch": "babel -w src --out-dir ."
   }
