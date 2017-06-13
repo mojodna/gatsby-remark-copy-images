@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-typegen-remark-copy-images",
+  "name": "gatsby-remark-copy-images",
   "description": "Find local images which are referenced from markdown and copy them to the public directory",
   "version": "0.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>, Seth Fitzsimmons <seth@mojodna.net>",
