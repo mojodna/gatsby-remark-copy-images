@@ -1,10 +1,10 @@
-# gatsby-typegen-remark-copy-images
+# gatsby-remark-copy-images
 
 Copies images referenced from markdown to your `public` folder.
 
 ## Install
 
-`npm install --save gatsby-typegen-remark-copy-images`
+`npm install --save gatsby-remark-copy-images`
 
 ## How to use
 
@@ -12,10 +12,10 @@ Copies images referenced from markdown to your `public` folder.
 // In your gatsby-config.js
 plugins: [
   {
-    resolve: `gatsby-typegen-remark`,
+    resolve: `gatsby-transformer-remark`,
     options: {
       plugins: [
-        `gatsby-typegen-remark-copy-images`,
+        `gatsby-remark-copy-images`,
       ]
     }
   }
@@ -44,4 +44,4 @@ folder and the markdown HTML will be modified to point to it.
 
 ## Background
 
-This was adapted from [gatsby-typegen-remark-copy-linked-files](https://github.com/gatsbyjs/gatsby/blob/1.0/packages/gatsby-typegen-remark-copy-linked-files/).
+This was adapted from [gatsby-remark-copy-linked-files](https://github.com/gatsbyjs/gatsby/blob/1.0/packages/gatsby-remark-copy-linked-files/).

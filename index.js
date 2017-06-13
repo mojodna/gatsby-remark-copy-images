@@ -17,9 +17,8 @@ module.exports = ({ files, markdownNode, markdownAST, getNode }) => {
         return null;
       });
       if (linkNode && linkNode.absolutePath) {
-        const newPath = path.join(process.cwd(), `public`, `${linkNode.contentDigest}.${linkNode.extension}`);
-        const relativePath = path.join(`/${linkNode.contentDigest}.${linkNode.extension}`);
-        link.url = `${relativePath}`;
+        const newPath = path.join(process.cwd(), `public`, `${linkNode.relativePath}`);
+        link.url = linkNode.relativePath;
         if (!fsExtra.existsSync(newPath)) {
           fsExtra.copy(linkPath, newPath, err => {
             if (err) {
