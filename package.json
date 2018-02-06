@@ -10,7 +10,8 @@
     "unist-util-visit": "^1.1.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.1"
+    "babel-cli": "^6.24.1",
+    "cross-env": "^5.0.5"
   },
   "keywords": [
     "gatsby",
@@ -20,8 +21,8 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "prepare": "babel src --out-dir .",
     "build": "babel src --out-dir .",
+    "prepublish": "cross-env NODE_ENV=production npm run build",
     "watch": "babel -w src --out-dir ."
   }
 }
